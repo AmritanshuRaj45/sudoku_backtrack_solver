@@ -67,27 +67,34 @@ The server will be available at http://localhost:3000.
 
 ### Landing Page (Play Sudoku)
 
-<!-- space for screenshot -->
+<img width="1919" height="985" alt="image" src="https://github.com/user-attachments/assets/3ca0c31f-5c25-4c24-92b4-6a343faa0831" />
+
 
 
 ### Level Selection and Timer
 
-<!-- space for screenshot -->
+<img width="219" height="280" alt="image" src="https://github.com/user-attachments/assets/dc74a8f3-ae7c-4196-86cc-a5bd73f31483" />
 
-
-### Playing a Puzzle (with cell coloring)
-
-<!-- space for screenshot -->
 
 
 ### Solution Reveal & Legend
 
-<!-- space for screenshot -->
+#### give solution
+<img width="1919" height="932" alt="image" src="https://github.com/user-attachments/assets/83f5c76c-0828-4a57-b950-11dc9c5321ec" />
+#### solve
+<img width="1919" height="923" alt="image" src="https://github.com/user-attachments/assets/3d2aeae3-1b4f-4b3d-b357-d8d5d1e28faf" />
+
+#### verify
+<img width="1919" height="927" alt="image" src="https://github.com/user-attachments/assets/54755507-1516-415d-a403-d50b5c51c7f2" />
 
 
 ### Classic Solver Page
 
-<!-- space for screenshot -->
+<img width="1919" height="924" alt="image" src="https://github.com/user-attachments/assets/141e27dc-e1f5-46e8-84a3-1b9b944c0b96" />
+
+<img width="1919" height="928" alt="image" src="https://github.com/user-attachments/assets/b94859c7-64fd-448d-9b5f-860b609e95a4" />
+
+
 
 
 ## Troubleshooting
