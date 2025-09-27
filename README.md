@@ -64,6 +64,8 @@ The server will be available at http://localhost:3000.
 - **Classic Solver**: Click "Sudoku Solver from Scratch" to access the original grid-based solver.
 
 ## Demo and Screenshots
+### Live demo
+[Click here to try it out](https://sudoku-backtrack-solver-main.vercel.app/)
 
 ### Landing Page (Play Sudoku)
 
