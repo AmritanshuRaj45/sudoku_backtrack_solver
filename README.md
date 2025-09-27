@@ -1,18 +1,29 @@
-# Sudoku_Backtrack_Solver
+# Sudoku Backtrack Solver
 
-Welcome to the Sudoku Backtracker Solver project! This project provides a web-based interface to solve Sudoku puzzles using a C++ backend. The web interface allows users to input a Sudoku grid, solve it, and view the results directly in the browser.
+Welcome to the Sudoku Backtrack Solver project! This project provides a modern, interactive web-based Sudoku experience with both a solver and a play mode, powered by a C++ backtracking algorithm and a Node.js backend.
 
 ## Project Structure
 
 - **C++ Solver**: A C++ program that solves Sudoku puzzles using a backtracking algorithm.
 - **Node.js Server**: An Express.js server that interfaces with the C++ solver and provides a RESTful API.
-- **Frontend**: A simple HTML/CSS/JavaScript frontend that allows users to input Sudoku puzzles and view solutions.
+- **Frontend**: Modern HTML/CSS/JavaScript interface for both playing Sudoku and solving custom puzzles.
 
 ## Features
 
-- **Solve Sudoku**: Submit a Sudoku puzzle to get the solution.
-- **Reset Grid**: Clear the grid and start fresh.
-- **Interactive UI**: A user-friendly grid with input validation and visual feedback.
+- **Play Sudoku**: Play randomly selected Sudoku puzzles at Easy, Medium, or Hard levels.
+- **Level Selection**: Choose your difficulty before starting a new game.
+- **Timer**: Track how long you take to solve each puzzle.
+- **Solution & Verify**: Check your solution or reveal the answer at any time.
+- **Keyboard Navigation**: Use arrow keys to move between cells; only numbers 1-9 are accepted.
+- **Cell Coloring**: 
+  - Grey: Prefilled cells
+  - Yellow: Cells filled by you
+  - Green: Cells filled by the computer/solution
+- **Side-by-Side Solution**: Compare your attempt with the correct solution.
+- **Legend**: Visual legend explains cell colors after solving.
+- **Responsive Layout**: Modern, mobile-friendly design.
+- **Landing Page**: The play experience is now the default landing page (`index.html`).
+- **Classic Solver**: Access the original solver interface via the "Sudoku Solver from Scratch" button.
 
 ## Getting Started
 
@@ -24,45 +35,65 @@ Welcome to the Sudoku Backtracker Solver project! This project provides a web-ba
 ### Setup Instructions
 
 #### 1. Clone the Repository
-`git clone https://github.com/AmritanshuRaj45/sudoku_backtrack_solver.git`
-
-`cd Sudoku_solver`
+```
+git clone https://github.com/AmritanshuRaj45/sudoku_backtrack_solver.git
+cd sudoku_backtrack_solver/Sudoku_solver
+```
 #### 2. Build the C++ Solver
 Compile the C++ solver:
-`g++ -o sudoku_solver sudoku_solver.cpp`
+```
+g++ -o sudoku_solver sudoku_solver.cpp
+```
+This creates an executable file named `sudoku_solver` (or `sudoku_solver.exe` on Windows) in the project directory.
 
-This command creates an executable file named sudoku_solver (or sudoku_solver.exe on Windows) in the project directory.
 #### 3. Install Node.js Dependencies
-Navigate to the directory and install dependencies:
-`cd Sudoku_solver`
+```
+npm install express
+```
 
-`npm install express`
 #### 4. Start the Node.js Server
-Start the server:
-`node server.js`
-
+```
+node server.js
+```
 The server will be available at http://localhost:3000.
+
 ### Usage
-  *  Open the Web Interface: Visit http://localhost:3000 in your web browser.
-  * Input a Sudoku Puzzle: Fill in the Sudoku grid. Each cell accepts numbers from 1 to 9.
-  * Solve the Puzzle: Click the Solve button to solve the puzzle. The solution will be displayed in the grid.
-  * Reset the Grid: Click the Reset button to clear the grid.
+- **Play Sudoku**: Visit http://localhost:3000 and start playing immediately!
+- **Select Level**: Click "New Game" and choose your desired difficulty.
+- **Solve or Verify**: Use the buttons to check your solution or reveal the answer.
+- **Classic Solver**: Click "Sudoku Solver from Scratch" to access the original grid-based solver.
+
 ## Demo and Screenshots
-### First look:-
 
-![image](https://github.com/user-attachments/assets/e47f3bf4-77ed-45c9-ba79-0a2bcfeb2db6)
-### Aftering entering input:-
+### Landing Page (Play Sudoku)
 
-![image](https://github.com/user-attachments/assets/512c5c6a-c57b-4009-8c14-e6711925e49c)
-### After clicking Solve:-
+<!-- space for screenshot -->
 
-![image](https://github.com/user-attachments/assets/9f3a25aa-83ef-4121-81fb-f78c261f3a59)
-### if the input is not valid or break Sudoku rules:-
 
-![image](https://github.com/user-attachments/assets/9d00b07f-8061-4353-ab7a-25e967e1687d)
+### Level Selection and Timer
+
+<!-- space for screenshot -->
+
+
+### Playing a Puzzle (with cell coloring)
+
+<!-- space for screenshot -->
+
+
+### Solution Reveal & Legend
+
+<!-- space for screenshot -->
+
+
+### Classic Solver Page
+
+<!-- space for screenshot -->
+
+
 ## Troubleshooting
-  *No Solution Exists: Ensure that the input grid is valid and follows Sudoku rules.
-  *Errors: Check server logs and make sure the C++ executable is correctly built and in the same directory as server.js.
+- **No Solution Exists**: Ensure that the input grid is valid and follows Sudoku rules.
+- **Errors**: Check server logs and make sure the C++ executable is correctly built and in the same directory as `server.js`.
+
 ## Contributing
 Feel free to open issues or submit pull requests if you find any bugs or have improvements in mind!
 

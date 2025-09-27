@@ -6,6 +6,11 @@ const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public'))); // Serve static files from the 'public' directory
 
+// Serve play.html as landing page
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'play.html'));
+});
+
 // Endpoint to solve Sudoku
 app.post('/solve', (req, res) => {
     const grid = req.body.grid;
